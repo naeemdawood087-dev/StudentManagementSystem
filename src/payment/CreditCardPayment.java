@@ -9,4 +9,8 @@ public class CreditCardPayment implements PaymentMethod {
         System.out.println("Payment of $" + amount + " successfully processed via Credit Card (..." + cardNumber.substring(cardNumber.length() - 4) + ").");
         return true;
     }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
 }

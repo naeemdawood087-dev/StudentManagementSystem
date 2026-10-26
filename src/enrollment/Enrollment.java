@@ -24,4 +24,20 @@ public class Enrollment {
         System.out.println("Status:  " + (isPaid ? "FEES PAID / ACTIVE" : "PENDING PAYMENT"));
                 System.out.println("----------------------------------------");
     }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public boolean isPaid() {
+        return isPaid;
+    }
+
+    public void setPaid(boolean paid) {
+        isPaid = paid;
+    }
 }

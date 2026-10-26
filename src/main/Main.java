@@ -8,13 +8,11 @@ import payment.CreditCardPayment;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("==========================================");
-        System.out.println("STUDENT MANAGEMENT SYSTEM INITIALIZED");
-                System.out.println("==========================================");
+
 // Instantiating Student and Course objects
-        Student student1 = new Student("SE-02064", "Talha Imtiaz",
-                "f24bseen1e02064@iub.edu.pk");
-        Course course1 = new Course("SE-301", "Software Construction", 4);
+        Student student1 = new Student("SE-02077", "Dawood Naeem",
+                "naeemdawood087@gmail.com");
+        Course course1 = new Course("SE-983", "Software Construction", 4);
         student1.displayProfile();
         course1.displayCourseInfo();
 // Enrolling Student into Course
@@ -22,8 +20,8 @@ public class Main {
         currentEnrollment.printEnrollmentSummary();
 // Processing Fee Payment via Interface
         System.out.println("\n[System] Initiating Fee Payment...");
-        PaymentMethod payment = new CreditCardPayment("9823-3466-8374-9333");
-        boolean paymentSuccess = payment.pay(12000.00);
+        PaymentMethod payment = new CreditCardPayment("2352-3466-8374-9333");
+        boolean paymentSuccess = payment.pay(122000.00);
         if (paymentSuccess) {
             currentEnrollment.completeEnrollment();
             currentEnrollment.printEnrollmentSummary();
